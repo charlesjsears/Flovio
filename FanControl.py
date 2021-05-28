@@ -5,19 +5,21 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(32, GPIO.OUT)
 
 p = GPIO.PWM(32, 5)
+p.ChangeDutyCycle(0)
+
 while(True):
         x = input('type l for low, m for medium and h for high:')
         if(x == 'l'):
-            p.start(50)
+            p.ChangeDutyCycle(50)
             break
         elif(x == 'm'):
-            p.start(75)
+            p.ChangeDutyCycle((75)
             break
         elif (x == 'h'):
-            p.start(100)
+            p.ChangeDutyCycle(100)
             break
         elif (x == 's'):
-                p.stop()
+                p.ChangeDutyCycle(0)
                 break
         else:
             print('please enter either 1, m, s and h')
