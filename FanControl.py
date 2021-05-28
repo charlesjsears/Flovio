@@ -16,9 +16,12 @@ while(True):
         elif (x == 'h'):
             p.start(100)
             break
+        elif (x == 's'):
+                p.stop()
+                break
         else:
-            print('please enter either 1, m, and h')
+            print('please enter either 1, m, s and h')
 
-input('Press return to stop:')
-p.stop()
+#input('Press return to stop:')
+#p.stop()
 GPIO.cleanup()
