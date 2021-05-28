@@ -10,19 +10,16 @@ p.ChangeDutyCycle(0)
 while(True):
         x = input('type l for low, m for medium and h for high:')
         if(x == 'l'):
-                p.ChangeDutyCycle(50)
-            
+            p.ChangeDutyCycle(50)
         elif(x == 'm'):
-                p.ChangeDutyCycle((75)
-            
+            p.ChangeDutyCycle((75)
         elif (x == 'h'):
-                p.ChangeDutyCycle(100)
-           
+            p.ChangeDutyCycle(100)
         elif (x == 's'):
-                p.ChangeDutyCycle(0)
+            p.ChangeDutyCycle(0)
             
         else:
-                print('Please enter either l, m, h or s')
+            print('Please enter either l, m, h or s')
 
 #input('Press return to stop:')
 #p.stop()
