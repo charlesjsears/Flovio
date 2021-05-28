@@ -12,7 +12,7 @@ while(True):
         if(x == 'l'):
             p.ChangeDutyCycle(50)
         elif(x == 'm'):
-            p.ChangeDutyCycle((75)
+            p.ChangeDutyCycle(75)
         elif (x == 'h'):
             p.ChangeDutyCycle(100)
         elif (x == 's'):
