@@ -5,7 +5,7 @@ const Fan = new Gpio(4, 'out');
  
 const DEVICE_NAME = 'flovio';
  
-function fanOn() { //function to start blinking
+function fanOn() { //function to start fan
   if (Fan.readSync() === 0) { //check the pin state, if the state is 0 (or off)
     Fan.writeSync(1); //set pin state to 1 (turn LED on)
   } else {
@@ -13,9 +13,9 @@ function fanOn() { //function to start blinking
   }
 }
 
-function fanOff() { //function to stop blinking
-  clearInterval(fanInterval); // Stop blink intervals
-  Fan.writeSync(0); // Turn LED off
+function fanOff() { //function to stop fan
+  clearInterval(fanInterval); // Stop fan intervals
+  Fan.writeSync(0); // Turn fan off
   Fan.unexport(); // Unexport GPIO to free resources
 }
  
@@ -58,9 +58,7 @@ bleno.on('advertisingStart', function(error) {
             uuid: '2A06',
             properties: ['writeWithoutResponse'],
             onWriteRequest(data, offset, withoutResponse, callback) {
-              //var fanInterval = setInterval(fanOn, 200); //run the blinkLED function every 250ms
-              //setTimeout(fanOff, 5000); //stop blinking after 5 seconds
-              fanOn();
+              fanOn(); //toggles fan state immediatley upon write
               callback(this.RESULT_SUCCESS);
             },
           }),
