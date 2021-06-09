@@ -2,9 +2,9 @@ import RPi.GPIO as GPIO
 import time
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BCM)
-GPIO.setup(13, GPIO.OUT)
+GPIO.setup(18, GPIO.OUT)
 
-p = GPIO.PWM(13, 100)
+p = GPIO.PWM(18, 100)
 p.start(0)
 
 while(True):
