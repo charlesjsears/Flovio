@@ -10,5 +10,5 @@ python FanControl.py
 
 The LED_DIM_TEST_PULSE.py code is another Python file that tests the adjustable brightness and color of the lights by sending a pulse from 0-10v for each and showing the changes in the LEDs.
 
-
+The DAC_1.py and the DAC_TEST.py are additional Python files to be run on the Raspberry Pi which test functions of the DAC to confirm they are working properly.
 
