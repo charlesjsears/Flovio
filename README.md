@@ -12,3 +12,4 @@ The LED_DIM_TEST_PULSE.py code is another Python file that tests the adjustable 
 
 The DAC_1.py and the DAC_TEST.py are additional Python files to be run on the Raspberry Pi which test functions of the DAC to confirm they are working properly.
 
+The flovio.png is a sample app loading screen.
