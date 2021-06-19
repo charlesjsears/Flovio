@@ -13,3 +13,5 @@ The LED_DIM_TEST_PULSE.py code is another Python file that tests the adjustable 
 The DAC_1.py and the DAC_TEST.py are additional Python files to be run on the Raspberry Pi which test functions of the DAC to confirm they are working properly.
 
 The flovio.png is a sample app loading screen.
+
+The flovio(4).zip is a compressed folder of all of the code that was on the Raspberry Pi. The motorcontrol.py code is the same as the FanControl.py file and the LEDControl.py is the program able to control the brightness and color temperature with keyboard commands. 
